@@ -1,0 +1,31 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+# GET http://localhost:32769
+GET http://localhost:32769/games
+###
+GET http://localhost:32769/games/1
+###
+POST http://localhost:32769/games
+Content-Type: application/json
+
+{
+  "name": "Fifa 23",
+  "genreId": 3,
+  "price": "69.99",
+  "releaseDate": "2022-09-27"
+}
+###
+PUT http://localhost:32769/games/1
+Content-Type: application/json
+
+{
+  "name": "Minecraft",
+  "genreId": "5",
+  "price": "19.99",
+  "releaseDate": "2011-11-18"
+}
+
+###
+DELETE http://localhost:32769/games/4
+
+###
+GET http://localhost:32769/genres
